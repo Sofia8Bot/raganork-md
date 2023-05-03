@@ -11,7 +11,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 module.exports = {
     VERSION: 'v3.0.0',
-    ALIVE: process.env.ALIVE || "https://telegra.ph/file/d8bb0b95392b37cd925cd.jpg هلا و غلا {sender}, موجود ياباشا \n Uptime: {uptime}",
+    ALIVE: process.env.ALIVE || "https://telegra.ph/file/d8bb0b95392b37cd925cd.jpg hey {sender}, iam alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
     PLATFORM:isHeroku?"Heroku":isKoyeb?"Koyeb":"VPS",isHeroku,isKoyeb,isVPS,
@@ -52,8 +52,8 @@ module.exports = {
     },
     DATABASE_URL: DATABASE_URL,
     DATABASE: DATABASE_URL === './bot.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
-    SUDO: process.env.SUDO || "",
-    LANGUAGE: process.env.LANGUAGE || 'arabic',
+    SUDO: process.env.SUDO || "201158862316",
+    LANGUAGE: process.env.LANGUAGE || 'english',
     DEBUG: DEBUG,
     ACR_A: "ff489a0160188cf5f0750eaf486eee74",
     ACR_S: "ytu3AdkCu7fkRVuENhXxs9jsOW4YJtDXimAWMpJp"
