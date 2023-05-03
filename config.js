@@ -16,7 +16,7 @@ module.exports = {
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
     PLATFORM:isHeroku?"Heroku":isKoyeb?"Koyeb":"VPS",isHeroku,isKoyeb,isVPS,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(edit AUTOMUTE_MSG)_',
-    ANTI_SPAM: process.env.ANTI_SPAM || '201158862316-201159250900',
+    ANTI_SPAM: process.env.ANTI_SPAM || '201158862316',
     MULTI_HANDLERS: convertToBool(process.env.MULTI_HANDLERS) || false,
     DISABLED_COMMANDS: (process.env.DISABLED_COMMANDS ? process.env.DISABLED_COMMANDS.split(",") : undefined) || [],
     ANTI_BOT: process.env.ANTI_BOT || '',
